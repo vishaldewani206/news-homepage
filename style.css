@@ -1,0 +1,95 @@
+:root {
+  --offwhite: hsl(36, 100%, 99%);
+  --grayishblue: hsl(233, 8%, 79%);
+  --darkgrayishblue: hsl(236, 13%, 42%);
+  --verydarkblue: hsl(240, 100%, 5%);
+  --softorange: hsl(35, 77%, 62%);
+  --softred: hsl(5, 85%, 63%);
+}
+@font-face {
+  font-family: inter;
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+@font-face {
+  font-family: inter-regular;
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: inter-bold;
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: inter-extraBold;
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+* {
+  font-family: inter-regular;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.nav-link:hover {
+  color: var(--softred);
+}
+
+.read-more {
+  background: var(--softred);
+  letter-spacing: 3px;
+}
+.read-more:hover {
+  background: hsl(240, 100%, 5%);
+}
+.heading {
+  font-size: 3.5rem;
+  color: var(--verydarkblue);
+  font-family: inter-extraBold;
+}
+.paragraph {
+  color: var(--darkgrayishblue);
+}
+.side {
+  background: var(--verydarkblue);
+}
+.side-heading {
+  color: var(--softorange);
+  font-family: inter-extraBold;
+}
+.side-paragraph {
+  color: var(--grayishblue);
+}
+.side h4 {
+  font-weight: bold;
+}
+.card {
+  width: 100px;
+}
+.card-text a {
+  color: var(--verydarkblue);
+  text-decoration: none;
+}
+.card-text a h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-text a:hover {
+  color: var(--softred);
+}
+.card-text p {
+  font-size: 1rem;
+  color: var(--darkgrayishblue);
+}
+.card-title {
+  font-size: 1.4rem;
+  color: var(--grayishblue);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}

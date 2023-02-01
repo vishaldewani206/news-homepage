@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Frontend Mentor | News homepage</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-lg">
+        <a href="#" class="navbar-brand">
+          <img src="assets/images/logo.svg" alt="website logo" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#close"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="close">
+          <button
+            class="btn-close align-self-end p-3 d-flex d-md-none"
+            data-bs-dismiss="offcanvas"
+          ></button>
+          <ul class="navbar-nav p-4 p-md-0 align-self-md-end">
+            <li class="nav-item me-md-3 mb-3 mb-md-0">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item me-md-3 mb-3 mb-md-0">
+              <a href="#" class="nav-link">News</a>
+            </li>
+            <li class="nav-item me-md-3 mb-3 mb-md-0">
+              <a href="#" class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item me-md-3 mb-3 mb-md-0">
+              <a href="#" class="nav-link">Trending</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Categories</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-lg">
+      <div class="row mt-4">
+        <div class="col col-12 col-md-8">
+          <picture>
+            <source
+              media="(min-width: 786px)"
+              srcset="assets/images/image-web-3-desktop.jpg"
+            />
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              class="img-fluid"
+              alt=""
+            />
+          </picture>
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="heading py-2">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="col-md-6">
+              <p class="paragraph py-4">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="btn btn-primary rounded-0 px-4 py-2 mb-4 mb-md-0 border-0 read-more"
+              >
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-4 side text-light p-4">
+          <h2 class="side-heading mt-2 mb-4">News</h2>
+          <h4 class="mb-3">Hydrogen VS Electric Cars</h4>
+          <p class="side-paragraph mb-4">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+          <hr />
+
+          <h4 class="mb-3">The Downsides of AI Artistry</h4>
+          <p class="side-paragraph mb-4">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <hr />
+
+          <h4 class="mb-3">Is VC Funding Drying Up?</h4>
+          <p class="side-paragraph mb-4">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="card-group">
+          <div class="card border-0 w-100">
+            <div class="row ms-0">
+              <div class="col-3 p-0">
+                <img
+                  src="assets/images/image-retro-pcs.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-9">
+                <div class="card-body p-0">
+                  <h2 class="card-title">01</h2>
+                  <div class="card-text">
+                    <a href="#"> <h4>Reviving Retro PCs</h4></a>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 w-100">
+            <div class="row ms-0">
+              <div class="col-3 p-0">
+                <img
+                  src="assets/images/image-top-laptops.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-9">
+                <div class="card-body p-0">
+                  <h2 class="card-title">02</h2>
+                  <div class="card-text">
+                    <a href="#"> <h4>Top 10 Laptops of 2022</h4></a>
+                    <p>Our best picks for various needs and budgets.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 w-100">
+            <div class="row ms-0">
+              <div class="col-3 p-0">
+                <img
+                  src="assets/images/image-gaming-growth.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-9">
+                <div class="card-body p-0">
+                  <h2 class="card-title">03</h2>
+                  <div class="card-text">
+                    <a href="#"> <h4>The Growth of Gaming</h4></a>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/vishaldewani206">Vishal</a>.
+    </div>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
